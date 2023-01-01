@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width:1080px;
+    padding: 10px;
 }
 
 .header {
@@ -415,4 +416,8 @@ img.bvdcatGif,
     }
   }
 
- 
+@media(max-width:300px){
+    .pageGateBody {
+        padding: 0px;
+    }
+}
