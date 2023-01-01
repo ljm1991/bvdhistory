@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    background-image: url(../Tutorial/images/tile_background.png);  
+    background-image: url(../bvdhistory/images/tile_background.png);  
     background-size: contain;
     background-position: center;
 }
@@ -393,7 +393,6 @@ img.bvdcatGif,
     }
 
     img.worldCup
-
     .bvdAward {
         height: 158px;
         width: 122px;
@@ -417,7 +416,5 @@ img.bvdcatGif,
   }
 
 @media(max-width:300px){
-    .pageGateBody {
-        padding: 0px;
-    }
+    
 }
