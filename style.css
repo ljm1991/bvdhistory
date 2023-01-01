@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../Tutorial/images/tile_background.png);  
+    background-size: contain;
+    background-position: center;
+}
+
+.pageGateBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:50px auto;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width:1080px;
+    padding: 0 20px;
+}
+
+.header {
+    justify-items: center;
+}
+
+.pageGateHead {
+    font-weight:bolder;
+    color:#fff;
+    font-size: 50px;
+    padding: 10 px;
+    text-align: center;
+    margin: 30px;
+}
+
+.pageGateHead .prompt {
+    font-weight: normal;
+    color:#fff;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10 px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    background-color: #fd5a5a;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    color:#fff;
+  }
+  
+
+  .topnav a.icon {
+    background: #fd5a5a;
+    color:#fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #fd5a5a;
+    color: white;
+  }
+
+.mainHead{
+    font-weight:bolder;
+    color:#fd5a5a;
+    font-size: 100px;
+    background-color: #fff;
+    padding: 10 px;
+    display: flex;
+    justify-content:center;
+}
+
+
+
+.tagline {
+    color:#fff;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #fd5a5a;
+}
+
+.wrapper {
+    max-width:1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.wrapper .center-line{
+    position:absolute;
+    height:1200%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper .row{
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.wrapper .rowLeft{
+    justify-content: flex-start; 
+}
+.wrapper .rowRight{
+    justify-content: flex-end; 
+}
+
+.wrapper .row section{
+    background: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+
+}
+
+.wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: red;
+    top: 28px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.rowLeft section::before{
+    right: -7px;
+}
+
+.rowRight section::before{
+    left: -7px;
+}
+.row section .details,
+.row section .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row section .details .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.row section p{
+    margin: 10px 17px 0;
+}
+
+.row section .bottom a{
+    text-decoration: none;
+    background: #fd5a5a;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    margin:10px;
+}
+.iconLeft {
+    left: -60px;
+}
+
+.iconRight{
+    right: -60px;
+}
+img.iconRight,
+img.iconLeft {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 13;
+    box-shadow: 0 0 0 2px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+
+img.deadCet,
+img.sneakPeek,
+.goldScouter,
+.moonMission,
+img.bvdcatGif,
+.cityNights {
+    height:350px;
+    width: 350px;
+    margin: 10px;
+}
+
+.bvdAward {
+    height: 350px;
+    width: 275px;
+    margin: 10px;
+}
+
+.camoCat,
+.bWCheckers,
+.snowboarder {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.swapImages{
+    display:flex;
+}
+
+.gacha {
+    height: 300px;
+    width: 225px;
+    margin: 10px;
+}
+
+.ABC,
+.labs,
+.cipherList,
+.halloweenTraits,
+img.worldCup {
+    height: 150px;
+    width: 300px;
+    margin: 10px;
+}
+
+.deadCet,
+.sneakPeek,
+.goldScouter,
+.moonMission,
+.bvdAward,
+img.bvdcatGif,
+.cityNights  {
+    display: flex;
+    justify-content: center;
+}
+
+.daoButtons{
+    display: flex;
+}
+
+.pageGateButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageGateButtons a {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff; 
+    color: #fd5a5a; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.pageGateButtons a:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+#myBtn {
+    position: absolute;
+    bottom: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #fff; 
+    color: #fd5a5a; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    right: -30px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media (max-width: 1080px){
+    .bWCheckers,
+    .snowboarder {
+        display:none;
+    }
+
+    .camoCat {
+        height:350px;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .swapImages{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .daoButtons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 772px){
+    .wrapper .center-line {
+        left: 30px;
+    }
+    .wrapper .row, {
+      margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section {
+        width: 100%;
+    }
+    .wrapper .row section::before{
+        left: -7px;
+    }
+    .rowLeft section::before{
+        left: 0px;
+    }
+    .iconRight{
+        left: -70px;
+    }
+    .iconLeft {
+        left: -70px;
+    }
+    .mainHead{
+        font-size: 50px;
+        margin: 10px;
+        padding: 10 px;
+        display:flex;
+        justify-content: center;
+    }
+    img.deadCet,
+    img.sneakPeek,
+    .camoCat,
+    .goldScouter,
+    .moonMission,
+    img.bvdcatGif,
+    .cityNights {
+       height: 200px;
+       width: 200px;
+    }
+
+    .bWCheckers,
+    .snowboarder {
+        display:none;
+    }
+
+    .ABC,
+    .labs,
+    .cipherList,
+    .halloweenTraits {
+        height: 100px;
+        width: 200px;
+    }
+
+    img.worldCup
+
+    .bvdAward {
+        height: 158px;
+        width: 122px;
+    }
+
+    .pageGateBody {
+        margin: 30px auto;
+    }
+
+}
+
+@media(max-width: 440px){
+    .wrapper .center-line,
+    .row section::before,
+    .row section .icon{
+      display: none;
+    }
+    .wrapper .row{
+      margin: 10px 0;
+    }
+  }
+
+ 
