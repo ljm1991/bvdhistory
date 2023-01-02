@@ -247,12 +247,16 @@ img.bvdcatGif,
     width: 225px;
     margin: 10px;
 }
+.dropTwo,
+img.worldCup {
+    height: 200px;
+    width: 400px;
+}
 
 .ABC,
 .labs,
 .cipherList,
-.halloweenTraits,
-img.worldCup {
+.halloweenTraits {
     height: 150px;
     width: 300px;
     margin: 10px;
@@ -339,6 +343,22 @@ img.bvdcatGif,
     }
 }
 
+.iframeContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframeContainer iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
 @media(max-width: 772px){
     .wrapper .center-line {
         left: 30px;
@@ -387,12 +407,13 @@ img.bvdcatGif,
     .ABC,
     .labs,
     .cipherList,
-    .halloweenTraits {
+    .halloweenTraits,
+    .dropTwo,
+    img.worldCup {
         height: 100px;
         width: 200px;
     }
 
-    img.worldCup
     .bvdAward {
         height: 158px;
         width: 122px;
@@ -413,8 +434,11 @@ img.bvdcatGif,
     .wrapper .row{
       margin: 10px 0;
     }
-  }
+
+}
 
 @media(max-width:300px){
-    
+    .twitter{
+        display: none;
+    }   
 }
